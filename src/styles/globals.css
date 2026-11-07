@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #17191C;
+  --color-charcoal-light: #23272C;
+  --color-charcoal-dark: #0F1012;
+  --color-charcoal-muted: #2E3339;
+
+  --color-silver: #BFC3C8;
+  --color-silver-light: #DCE0E5;
+  --color-silver-dark: #8E949C;
+  --color-silver-muted: #5F646C;
+
+  --color-gold: #B69A69;
+  --color-gold-light: #CBB285;
+  --color-gold-dark: #917747;
+  --color-gold-muted: rgba(182, 154, 105, 0.15);
+
+  --color-offwhite: #F5F5F2;
+  --color-offwhite-muted: #E2E2DE;
+
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  font-family: var(--font-body);
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-charcoal);
+  color: var(--color-offwhite);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Prevent tap highlight flicker on touch screens */
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Custom scrollbar for Metallix industrial aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #17191C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E3339;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B69A69;
+}

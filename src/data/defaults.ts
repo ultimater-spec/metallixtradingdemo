@@ -1,0 +1,82 @@
+import { HomepageSettings, CompanySettings, Enquiry } from '../types';
+
+export const defaultHomepageSettings: HomepageSettings = {
+  heroBadge: 'UAE Market Focus • Architectural Hardware & Building Materials',
+  heroHeading: 'ENGINEERING EXCELLENCE. BUILDING TRUST.',
+  heroDescription: 'Discover quality architectural hardware, furniture fittings, building materials and industrial solutions from Metallix Trading across the UAE.',
+  heroBgImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80',
+  primaryButtonText: 'Explore Products',
+  secondaryButtonText: 'Request a Quote',
+  aboutBadge: 'About Metallix Trading',
+  aboutHeading: 'Building Trust Through Quality',
+  aboutDescription: 'Metallix Trading supplies quality architectural hardware, furniture fittings, building materials, glass hardware, and industrial tools to contractors, joinery manufacturers, and developers across the UAE.',
+  contactCtaBadge: 'Direct Trade Enquiries',
+  contactCtaHeading: 'Need a Commercial Quotation or Material Specification?',
+  contactCtaDescription: 'Submit your project schedule, bill of materials, or custom hardware requirements. Our trade desk provides prompt commercial pricing and availability.',
+};
+
+export const defaultCompanySettings: CompanySettings = {
+  companyName: 'Metallix Trading LLC',
+  email: 'info@metallixtrading.com',
+  salesEmail: 'sales@metallixtrading.com',
+  phone: '+971 4 000 0000',
+  whatsApp: '+971 50 000 0000',
+  address: 'Industrial Area, Dubai, United Arab Emirates (Showroom & Warehouse)',
+  website: 'https://metallixtrading.com',
+  workingHours: 'Mon - Fri: 08:00 - 18:00 (GST)',
+  linkedin: 'https://linkedin.com/company/metallix-trading',
+  facebook: 'https://facebook.com/metallixtrading',
+  instagram: 'https://instagram.com/metallixtrading',
+};
+
+export const defaultEnquiries: Enquiry[] = [
+  {
+    id: 'RFQ-2026-001',
+    customerName: 'Marcus Vance',
+    company: 'Apex Fitout & Interiors',
+    email: 'm.vance@apexfitout.ae',
+    phone: '+971 50 876 5432',
+    productName: 'Architectural Grade 304 Stainless Lever Handles & Mortise Locks',
+    quantity: '180 Sets',
+    status: 'New',
+    date: '2026-11-04',
+    message: 'Matte black finish required for commercial tower hospitality fitout. Delivery needed by mid-month.',
+  },
+  {
+    id: 'RFQ-2026-002',
+    customerName: 'Elena Rostova',
+    company: 'Gulf Joinery & Woodcraft',
+    email: 'erostova@gulfjoinery.com',
+    phone: '+971 52 345 6789',
+    productName: 'Soft-Closing Concealed Cabinet Hinges (3D Adjustable)',
+    quantity: '1,200 Pieces',
+    status: 'In Progress',
+    date: '2026-11-03',
+    message: 'Looking for bulk carton pricing and immediate delivery to Al Quoz warehouse.',
+  },
+  {
+    id: 'RFQ-2026-003',
+    customerName: 'Tariq Al-Mansoor',
+    company: 'Emirates Glass & Glazing LLC',
+    email: 'tariq@emiratesglass.ae',
+    phone: '+971 55 901 2345',
+    productName: 'Heavy-Duty Hydraulic Floor Springs & Patch Fittings',
+    quantity: '45 Sets',
+    status: 'Contacted',
+    date: '2026-11-02',
+    message: 'Need technical specification sheet and warranty terms for 12mm frameless glass entrance doors.',
+  },
+  {
+    id: 'RFQ-2026-004',
+    customerName: 'Sanjay Kapoor',
+    company: 'Modern Tower Facades LLC',
+    email: 'sanjay@moderntower.ae',
+    phone: '+971 54 888 1234',
+    productName: 'Structural Glazing Silicone & Bi-Metal Facade Fasteners',
+    quantity: '300 Cartridges / 6,000 Screws',
+    status: 'Completed',
+    date: '2026-11-01',
+    message: 'Quotation accepted and initial testing samples delivered to jobsite.',
+  },
+];
+
